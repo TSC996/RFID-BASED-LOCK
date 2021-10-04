@@ -40,15 +40,15 @@ void loop()
   Serial.println();
   Serial.print("Message : ");
   content.toUpperCase();
-  if (content.substring(1) == "BD 31 15 2B") //change here the UID of the card/cards that you want to give access
+  if (content.substring(1) == "Add your Device ID") 
   {
-    Serial.println("Authorized access");
+    Serial.println("Access Granted");
     Serial.println();
-    delay(3000);
+    delay(2000);
   }
  
  else   {
-    Serial.println(" Access denied");
+    Serial.println("Access denied");
     delay(3000);
   }
  
